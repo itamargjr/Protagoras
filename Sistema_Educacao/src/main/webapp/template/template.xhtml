@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+	  xmlns:w="http://xmlns.jcp.org/jsf/composite">
+
+    <h:head>
+        <title>Protagoras - Gestor Educacional</title>
+        
+        <link rel="shortcut icon" href="resources/imagens/logo.jpg"/>
+	
+	   	<!--  A Ordem dos Links dos CSS e dos js Fazem a Diferença  -->
+	    <h:outputStylesheet library="js"  name="respond.min.js" />	
+	    <h:outputStylesheet library="js"  name="jquery-2.0.3.js" />	
+	    <h:outputStylesheet library="js"  name="jquery-ui-1.10.3.custom.js" />	    
+	    <h:outputStylesheet library="js"  name="jquery.mobile-1.3.2.min.js" />
+	    
+	    <h:outputStylesheet library="css" name="reset.css" />
+	   	<h:outputStylesheet library="css" name="variaveis.css" />
+	   	<h:outputStylesheet library="css" name="boilerplate.css" />
+	   	<h:outputStylesheet library="css" name="style.css"/> 
+	    <h:outputStylesheet library="css" name="Tamanho320px.css"/>	
+	    
+	    <h:outputStylesheet library="primefaces" name="primeicons/primeicons.css"/>
+    	<h:outputStylesheet library="primefaces" name="layout/layout.css"/>
+		
+		<script type="text/javascript" src="resources/js/funcoes.js"/>
+		<script type="text/javascript" src="resources/js/mascaras.js"/>
+		<ui:insert name="scripts_javascript" />
+    </h:head>
+
+    <h:body>
+    
+        <div id="wrapper">
+	        <!-- Barra superior com a imagem -->
+	        <div id="header">
+	            <h:graphicImage library="imagens" name="logo_texto.jpg" />
+	            
+	            <header style="float: right;padding: 25px 10px 25px 0px;display: block;white-space: nowrap;font-size: 18px;">
+	            	<h1>Protagoras - Gestor Educacional</h1>
+	            </header>
+	        </div>
+	
+	        <!-- Menu lateral -->
+		<div id="content"  style="padding:0.5rem;width:41.6667%;" class="col-5 flex align-items-center justify-content-center">
+            <ui:insert name="corpo"/>
+        </div>
+	    
+	    <div>
+        	<h:form>
+			    <p:dock position="bottom">
+			        <p:menuitem value="Home" icon="/resources/demo/images/home.png"/>
+			        <p:menuitem value="Music" icon="/resources/demo/images/music.png"/>
+			        <p:menuitem value="Video" icon="/resources/demo/images/video.png"/>
+			        <p:menuitem value="Email" icon="/resources/demo/images/email.png"/>
+			        <p:menuitem value="Portfolio" icon="/resources/demo/images/portfolio.png"/>
+			    </p:dock>
+			</h:form>
+        </div>
+	</div>
+    </h:body>
+
+</html>
